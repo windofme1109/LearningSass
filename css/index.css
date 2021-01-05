@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import './theme-color.css';
+a {
+  color: #ff3366;
+}
+
+.test .one {
+  background-color: yellow;
+}
+.test .one:hover {
+  background-color: green;
+}
+
+.test {
+  /* css 风格的注释，会被编译到最终的 css 文件 */
+  color: red;
+  font-size: 25px;
+  background-color: yellow;
+}
+.test .one:hover {
+  color: green;
+}
+.test .two {
+  color: #666;
+}
+.test .three {
+  color: #666;
+}
+
+.test-2 .one-1 {
+  font-size: 4px;
+}
+.test-2 .two-2 {
+  font-size: 20;
+}
+.test-2 .two-2::before {
+  content: "this is 123";
+  content: this is123;
+}
+.test-2 .three-2 {
+  font-size: 3px;
+}
+.test-2 .four-2 {
+  font-size: 20px;
+  font-size: -10px;
+}
+.test-2 .five-2 {
+  font-size: 20% 3;
+}
+
+.test-3 {
+  color: black;
+}
+.test-3:hover {
+  color: red;
+}
+.test-3:visited {
+  color: #666;
+}
+
+.error, h1.seriousError, .seriousError {
+  border: 1px solid red;
+  background-color: #666;
+}
+
+.error a:hover, .seriousError a:hover {
+  border: 1px solid green;
+}
+
+.seriousError {
+  border-width: 2px;
+}
+
+/*
+颜色函数
+darken($color, $amount) 
+颜色加深,第一个参数是颜色,第二个参数是百分比,必须介于 0% 到 100%,通过减少 $color 的 HSL 亮度实现对颜色的加深
+
+lighten($color, $amount)
+颜色变浅,第一个参数是颜色,第二个参数是百分比,必须介于 0% 到 100%,通过增加 $color 的 HSL 亮度实现使得颜色的变浅
+
+greyscale($color)
+获得与 $color 相同亮度的灰度值
+例如:grayscale(#6b717f); // #757575
+opacify($color, $amount)
+让一个颜色变得更加透明，$amount 必须是介于 0 到 1 之间的数字，减少 $color 的 alpha 通道实现让颜色变得透明
+red() 获取一个颜色的 red 通道
+blue() 获取一个颜色的 blue 通道
+
+list 函数
+map 函数
+math 函数
+*/
+.test-4 {
+  background-color: #ccc;
+}
+
+border-1 {
+  border: 1px solid red;
+}
+
+border-2 {
+  border: 1px solid red;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-1 {
+  width: 2em;
+}
+
+.a {
+  background-image: url("./img/a.jpg");
+}
+
+.b {
+  background-image: url("./img/b.jpg");
+}
+
+.c {
+  background-image: url("./img/c.jpg");
+}
+
+.d {
+  background-image: url("./img/d.jpg");
+}
+
+.test-large {
+  font-size: 10px;
+}
+
+.test-medium {
+  font-size: 6px;
+}
+
+.test-small {
+  font-size: 3px;
+}
+
+.test-5 {
+  width: 20px;
+  color: #80d12e;
+}
+
+/*# sourceMappingURL=index.css.map */
